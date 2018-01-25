@@ -1,0 +1,9 @@
+mixin b-header(menuItems)
+	.header
+		a(href="#").link
+			img.logo(src='/assets/i/logo.png')
+		.menu
+			ul.navbar
+				each item in menuItems
+					li.nav-item
+						a.nav-link= item

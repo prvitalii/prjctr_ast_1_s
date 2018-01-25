@@ -1,0 +1,53 @@
+@import 's/main'
+@import 's/variables'
+
+// @mixin #{$phone}
+// @mixin #{$tablet-port}
+// @mixin #{$tablet-land}
+// @mixin #{$desktop}
+
+
+// header
+.header
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	background: blue
+	.logo
+		height: 40px
+		padding: 5px 50px
+	.menu
+		// @media #{$tablet-port}
+		// 	display: block
+		// 	width: 100%
+		// 	text-align: center
+		// flex-wrap: wrap
+		.navbar
+			display: flex
+			justify-content: center
+			// @media #{$phone}
+		.nav-item
+			list-style-type: none
+			width: 100%
+			text-align: center
+		.nav-link
+			text-decoration: none
+			display: block
+			padding: 15px
+			color: black
+			// color: #fff
+		.nav-link:hover
+			text-decoration: underline red
+// about
+.about
+	background: grey
+	color: #fff
+	.title
+		text-align: center
+	.text
+// footer
+.footer
+	background: yellow
+	.title
+		text-align: center
+	.text
